@@ -1,0 +1,7 @@
+version: '3'
+services:
+  launch4j:
+    build: ./
+    entrypoint: 
+      - launch4j
+      - --help
