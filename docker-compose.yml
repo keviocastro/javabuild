@@ -2,6 +2,8 @@ version: '3'
 services:
   launch4j:
     build: ./
+    volumes:
+      - ./:/app
     entrypoint: 
       - launch4j
-      - --help
+      - /app/config.xml
