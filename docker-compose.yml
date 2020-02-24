@@ -9,3 +9,6 @@ services:
   java11:
     build: ./11
     image: keviocastro/java-build:11
+  latest: 
+    build: ./11 
+    image: keviocastro/java-build:11

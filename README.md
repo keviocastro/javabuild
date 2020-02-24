@@ -1,7 +1,7 @@
 ### Multiple tools for building java projects in continuous integration
 
 >> Tag 8 from debian
->> Tag 11 form alpine
+>> Tag 11, latest form alpine
 
 ## launch4j
 >> Tags: 8
@@ -38,4 +38,11 @@ See [Maven site](https://maven.apache.org/)
 
 ```console
 docker run -v $(pwd):/app --rm keviocastro/javabuild mvn clean package
+````
+
+# docker
+>> Tags: 11
+
+```console
+docker run -v $(pwd):/app --rm docker build -t mytag && docker push -t mytag
 ````
