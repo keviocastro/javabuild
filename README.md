@@ -3,6 +3,20 @@
 >> Tag 8 from debian
 >> Tag 11, latest form alpine
 
+## Example Gitalb Tag 11
+
+```yaml
+docker-build:
+    image: keviocastro/docker-build:11
+    services:
+      - docker:ding
+    script:
+        - bumpversion --current-version minor pom.xml
+        - mvn clean package
+        - docker build -t mytag
+        - docker push mytag
+````
+
 ## launch4j
 >> Tags: 8
 
@@ -15,8 +29,13 @@ a native pre-JRE splash screen, and a Java download page in case the appropriate
 
 For more details on launch4j command, go to: [Launch4j site](http://launch4j.sourceforge.net/)
 
-```console
-docker run -v $(pwd):/app --rm keviocastro/javabuild launch4j /app/config.xml
+Gitlab example:
+
+```yaml
+docker-build:
+    image: keviocastro/docker-build:8
+    script:
+        - launch4j config.xml
 ````
 
 ## bumpversion
@@ -27,6 +46,10 @@ See [bumpversion site](https://github.com/peritus/bumpversion)
 
 
 ```console
+docker-build:
+    image: keviocastro/docker-build:8
+    script:
+        - bumpversion --current-version minor pom.xml
 docker run -v $(pwd):/app --rm keviocastro/javabuild bumpversion --current-version minor pom.xml
 ````
 
