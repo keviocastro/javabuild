@@ -1,9 +1,11 @@
 version: '3'
 services:
-  launch4j:
-    build: ./
-    volumes:
-      - ./:/app
+  java8:
+    build: ./8
+    image: keviocastro/java-build:8
     entrypoint: 
       - launch4j
       - /app/config.xml
+  java11:
+    build: ./11
+    image: keviocastro/java-build:11

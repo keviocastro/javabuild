@@ -1,6 +1,10 @@
 ### Multiple tools for building java projects in continuous integration
 
-# launch4j
+>> Tag 8 from debian
+>> Tag 11 form alpine
+
+## launch4j
+>> Tags: 8
 
 Cross-platform Java executable wrapper
 Launch4j is a cross-platform tool for wrapping Java applications distributed as jars in lightweight 
@@ -16,6 +20,7 @@ docker run -v $(pwd):/app --rm keviocastro/javabuild launch4j /app/config.xml
 ````
 
 ## bumpversion
+>> Tags: 8, 11
 
 Version-bump your software with a single command!
 See [bumpversion site](https://github.com/peritus/bumpversion)
@@ -26,6 +31,7 @@ docker run -v $(pwd):/app --rm keviocastro/javabuild bumpversion --current-versi
 ````
 
 # maven
+>> Tags: 8, 11
 
 Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
 See [Maven site](https://maven.apache.org/)
