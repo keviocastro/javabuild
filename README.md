@@ -39,7 +39,7 @@ docker-build:
 ````
 
 ## bumpversion
->> Tags: 8, 11
+> Tags: 8, 11
 
 Version-bump your software with a single command!
 See [bumpversion site](https://github.com/peritus/bumpversion)
