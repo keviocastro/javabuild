@@ -1,7 +1,7 @@
 ### Multiple tools for building java projects in continuous integration
 
->> Tag 8 from debian
->> Tag 11, latest form alpine
+> Tag 8 from debian<br>
+> Tag 11, latest form alpine
 
 ## Example Gitalb Tag 11
 
