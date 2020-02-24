@@ -1,6 +1,6 @@
 ### Multiple tools for building java projects in continuous integration
 
-## Example Gitalb Tag 11
+## Example Gitalb with tag 11
 
 ```yaml
 docker-build:
