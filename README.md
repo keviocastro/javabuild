@@ -18,7 +18,7 @@ docker-build:
 ````
 
 ## launch4j
->> Tags: 8
+> Tag: 8
 
 Cross-platform Java executable wrapper
 Launch4j is a cross-platform tool for wrapping Java applications distributed as jars in lightweight 
@@ -54,7 +54,7 @@ docker run -v $(pwd):/app --rm keviocastro/javabuild bumpversion --current-versi
 ````
 
 # maven
->> Tags: 8, 11
+> Tags: 8, 11
 
 Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
 See [Maven site](https://maven.apache.org/)
@@ -64,7 +64,7 @@ docker run -v $(pwd):/app --rm keviocastro/javabuild mvn clean package
 ````
 
 # docker
->> Tags: 11
+> Tag: 11
 
 ```console
 docker run -v $(pwd):/app --rm docker build -t mytag && docker push -t mytag
