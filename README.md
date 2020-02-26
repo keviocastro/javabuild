@@ -1,6 +1,6 @@
 ### Multiple tools for building java projects in continuous integration
 
-## Example Gitalb with tag 11
+#### Example Gitalb with tag 11
 
 ```yaml
 docker-build:
@@ -14,7 +14,7 @@ docker-build:
         - docker push mytag
 ````
 
-## bumpversion
+#### bumpversion
 
 Version-bump your software with a single command!
 See [bumpversion site](https://github.com/peritus/bumpversion)
@@ -27,7 +27,7 @@ docker-build:
 docker run -v $(pwd):/app --rm keviocastro/javabuild bumpversion --current-version minor pom.xml
 ````
 
-# maven
+#### maven
 
 Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
 See [Maven site](https://maven.apache.org/)
@@ -36,7 +36,7 @@ See [Maven site](https://maven.apache.org/)
 docker run -v $(pwd):/app --rm keviocastro/javabuild mvn clean package
 ````
 
-# docker
+#### docker
 
 ```console
 docker run -v $(pwd):/app --rm docker build -t mytag && docker push -t mytag
